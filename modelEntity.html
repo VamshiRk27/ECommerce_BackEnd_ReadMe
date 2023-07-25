@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container Div -->
+    <div class="model-container">
+        <h1>Model Entities</h1>
+        <div>
+            <p>This project involves 7 entities and they are categorized into 3 different types.
+                <ol>
+                    <li>Primary</li>
+                    <li>Secondary</li>
+                    <li>Tertiary</li>
+                </ol>
+            </p>
+        </div>
+        <br>
+        <!-- Primary Entities -->
+        <h2 class="sub-heading">Primary Entity</h2>
+        <p>
+            The Primary Entity models of this project are <i>Customer</i>, <i>Seller</i>, and <i>Product</i>. These entities operate independently of one another.
+        </p>
+        <div class="primary">
+            <!-- User Card -->
+            <div class="card" id="user-card">
+                <div class="card-front">
+                    <img src="./images/User_Round.png" alt="User Profile">
+                    <span>Customer</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/User_Round.png" alt="User Profile">
+                        <h2>Customer</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">CustomerID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Name</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">EmailID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Age</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Mobile Number</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Address</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">User Cards</span>
+                            <span class="right">Cards</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Cart Items</span>
+                            <span class="right">Cart</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">List of Orders</span>
+                            <span class="right">Orders List</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Seller Card -->
+            <div class="card" id="seller-card">
+                <div class="card-front">
+                    <img src="./images/Seller.png" alt="Seller Profile">
+                    <span>Seller</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/Seller.png" alt="Seller Profile">
+                        <h2>Seller</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Seller ID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Name</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">EmailID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Age</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Mobile Number</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Address</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">List of Products</span>
+                            <span class="right">Products List</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Card -->
+            <div class="card" id="product-card">
+                <div class="card-front">
+                    <img src="./images/Products.png" alt="Product Profile">
+                    <span>Product</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/Products.png" alt="Product Profile">
+                        <h2>Product</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Product ID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Name</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Price</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Quantity</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Enum</span>
+                            <span class="right">Product Category</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Enum</span>
+                            <span class="right">Product Status</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Seller</span>
+                            <span class="right">Seller</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">List of Items</span>
+                            <span class="right">Items List</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Secondary Entities Block -->
+        <h2 class="sub-heading">Secondary Entity</h2>
+        <p>
+            The Secondary Entity models of this project are <i>Cart</i> & <i>Card</i>. These models are dependent on one of the primary model "Customer".
+        </p>
+        <div class="secondary">
+            <!-- Cart Card -->
+            <div class="card" id="cart-card">
+                <div class="card-front">
+                    <img src="./images/Shopping_Cart_Color.png" alt="Cart Profile">
+                    <span>Cart</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/Shopping_Cart_Color.png" alt="Cart Profile">
+                        <h2>Cart</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Cart ID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Cart Total</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Number of Items</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Customer</span>
+                            <span class="right">Customer</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">List of Items</span>
+                            <span class="right">Items</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Entity -->
+            <div class="card" id="transaction-card">
+                <div class="card-front">
+                    <img src="./images/credit-card.png" alt="Debit Card Profile">
+                    <span>Card</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/credit-card.png" alt="Debit Card Profile">
+                        <h2>Card</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Card ID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Card Number</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">CVV</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Date</span>
+                            <span class="right">Expiry Date</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Enum</span>
+                            <span class="right">Card Type</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Customer</span>
+                            <span class="right">Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Tertiary Entities Block -->
+        <h2 class="sub-heading">Tertiary Entity</h2>
+        <p>
+            The Tertiary Entity models of this project are <i>Item</i> & <i>Orders</i>. These models are dependent on one of the primary model and secondary model.
+        </p>
+        <div class="tertiary">
+            <!-- Item Card -->
+            <div class="card" id="item-card">
+                <div class="card-front">
+                    <img src="./images/Items_icon.png" alt="Item Profile">
+                    <span>Item</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/Items_icon.png" alt="Item Profile">
+                        <h2>Item</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Item ID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Name</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Required Quantity</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Cart</span>
+                            <span class="right">Cart</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Orders</span>
+                            <span class="right">Orders</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Product</span>
+                            <span class="right">Product</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Order Card -->
+            <div class="card" id="order-card">
+                <div class="card-front">
+                    <img src="./images/delivery-man_orders.png" alt="Order Profile">
+                    <span>Order</span>
+                </div>
+                <div class="card-back">
+                    <div class="card-title">
+                        <img src="./images/delivery-man_orders.png" alt="Order Profile">
+                        <h2>Order</h2>
+                    </div>
+                    <div class="variables">
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Order ID</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Order Number</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Integer</span>
+                            <span class="right">Total Order Value</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Date</span>
+                            <span class="right">Order Date</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">String</span>
+                            <span class="right">Card used</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Enum</span>
+                            <span class="right">Payment Mode</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Enum</span>
+                            <span class="right">Order Status</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Customer</span>
+                            <span class="right">Customer</span>
+                        </div>
+                        <div class="content">
+                            <span class="left">Item</span>
+                            <span class="right">Item</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

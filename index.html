@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container Div -->
+    <div class="main-container">
+        <!-- Main Heading Div -->
+        <div class="heading">
+            <h1 style="text-align: center;">E-Commerce Backend System (EMS)</h1>
+        </div>
+        <hr width="95%">
+        <!-- Technical Data -->
+        <div class="Technical-data">
+            <p style="font-size: 18px;"><strong>Table of Contents:</strong></p>
+            <ol>
+                <li>Tech Stack:
+                    <ul>
+                        <li>Programming Language - Java</li>
+                        <li>Framework - Spring Boot</li>
+                        <li>Database - MySQL</li>
+                        <li>API - Representational state transfer (REST)</li>
+                    </ul>
+                </li>
+                <li>Tools:
+                    <ul>
+                        <li>IntelliJ IDEA - Integrated Development Environment (IDE) for Java</li>
+                        <li>DBeaver - Graphical Database Management Tool</li>
+                        <li>Swagger UI - Open-source project that generates documents of REST APIs via a web browser.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <!-- Overview -->
+        <div class="over-view">
+            <h3>Overview:</h3>
+            <p>
+                The Ecommerce Backend System(EMS) project has been implemented using Spring Boot is a solution for managing the backend operations of an
+                online store. It leverages the power of Spring Boot, a popular Java framework known for its simplicity and productivity.
+            </p>
+            <p>
+                One of the key features of this project is its modular structure. 
+                It is divided into different modules, each responsible for a specific aspect of the ecommerce operations. 
+                These modules include user management, product management, order processing, and inventory management. 
+                This modular approach allows for easy maintenance and extensibility of the application.
+            </p>
+            <p>
+                The project utilizes Spring Data JPA for seamless integration with databases. It provides a repository pattern that simplifies the interaction with the database, 
+                eliminating the need for writing boilerplate code. 
+                Additionally, it leverages Hibernate, a powerful and widely used object-relational mapping (ORM) framework, 
+                to map Java objects to database tables. 
+            </p>
+            <p>
+                The project follows RESTful API principles, 
+                providing a clean and standardized interface for integrating with frontend applications and external services. 
+                It uses HTTP methods like GET, POST, PUT, and DELETE to perform CRUD (Create, Read, Update, Delete) operations 
+                on resources. The APIs are well-documented using tools like Swagger, making it easy for developers to understand 
+                and consume them.
+            </p>
+        </div>
+        <!-- FrontEnd -->
+        <div class="Front-End">
+            <h2>Frontend Used :</h2>
+            <p>
+                Current version of this project doesn't have any Front-End Model. The project has been documented using 
+                <a title="This link works only when the project is running in your IDE."
+                href="http://localhost:8080/swagger-ui/index.html" target="_blank"><b><i>Swagger UI</i></b></a>.
+            </p>
+        </div>
+        <!-- BackEnd -->
+        <div class="Back-End">
+            <h2>Backend Used :</h2>
+            <p>
+                Backend programming is the handling of all complex operations, hidden behind a website or application, to help the application operate smoothly. The backend usually consists of three parts: the server, the application, and the database. The EMS project backend primarily consists of 3 main resources i.e., Spring Boot, RESTful API and MySQL Database.
+            </p>
+            <div>
+                <h4>Spring Boot</h4>
+                <p>
+                    Spring Boot is the fastest way to create a standalone REST service. Spring Boot configures all by itself by providing specific behaviors. Earlier the initialization of a Spring
+                    project was hard when dependencies needed to be declared in pom.xml file using XML or other complex annotations. With Spring Boot,Spring application creation is quick and the configuration is also simpler. Spring Boot by default provides an embedded Apache Tomcat build. 
+                </p>
+                <h4>RESTful API</h4>
+                <p>
+                    RESTful API is a standard used in designing API for web applications. APIs are methods and protocols to connect with other libraries and applications. API stands for Application Programming Interface. The API can return the data for application in common data types such as JSON
+                    or XML. <br> 
+                    REST (Representational State Transfer) is a standard of web service. RESTful can use
+                    JSON, XML, plain text, html as the structure of the returned data.
+                </p>
+                <h4>MySQL Database</h4>
+                <p>
+                    MySQL is an open source relational database management system.MySQL manages data
+                    through databases. Each database can have many relational tables containing data.
+                    MySQL also has the same access and code as the SQL language. 
+                </p>
+                    <span class="working"><b>MySQL Working</b></span>
+                    <ul>
+                        <li>
+                            MySQL creates tables to store data, and also defines the relationships
+                            between those tables.
+                        </li>
+                        <li>
+                            Client sends SQL requests with a special command on MySQL.
+                        </li>
+                        <li>
+                            The application on the server receives and responds to the information and returns the results to the client.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <!-- Architecture -->
+        <div class="architecture">
+            <h2>Architecture:</h2>
+            <div class="backend">
+                <h3>Back-end</h3>
+                <p>
+                    The Ecommerce Backend System(EMS) project is built using the Three Tier Architecture model in Spring Boot.<br>The presentation
+                    layer is the communication layer with the end user. All data sent from the server to the client parallelly here only checks the correctness of the data.
+                </p>
+                <p>
+                    In REST, three tier has the HTTP Method like GET, POST, PUT, DELETE with the purpose of getting data, adding data, updating data, deleting. The Controller contains all the logic of the program. 
+                    The Data access layer interacts with the database, returning the results to the business logic layer (Controller).
+                    <br> <br>
+                    <img src="https://user.oc-static.com/upload/2019/04/06/15545765386427_Screen%20Shot%202019-04-06%20at%205.29.27%20pm.png" alt="Three Tier Structure Image" height="325px" width="300px">
+                </p>
+            </div>
+        </div>
+        <!-- More Links -->
+        <div class="links">
+            <button id="model-btn" onclick="getModels()" title="Redirects you to the Model / Entity information.">
+                Model Entities
+            </button>
+            <button id="copy-link" onclick="copyToClipboard()" title="Copies the repo link to the clipboard.">
+                Copy Link
+            </button>
+        </div>
+        <!-- Updates -->
+        <div class="updates">
+            <h3>Further Improvements</h3>
+            <p>
+                To ensure secure access to sensitive data, the project needs to incorporate authentication and authorization mechanisms. <br>
+                Role-based access control is to be implemented to define different levels of authorization for different users.
+            </p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

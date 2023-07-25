@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Main Container */
+.main-container{
+    margin: 1% 8%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px 40px;
+    border-radius: 15px;
+    background: linear-gradient(150deg,#ebadc2,#d65c85);
+    font-size: 18px;
+}
+.main-container h3{
+    margin:0px;
+    padding: 4px 0px;
+}
+.main-container ol,ul{
+    margin: 4px;
+}
+.main-container p{
+    margin:0px;
+    padding: 4px 15px;
+}
+.main-container h2{
+    margin-bottom: 0px;
+}
+.main-container h4{
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 4px;
+}
+.working{
+    margin-left: 15px;
+    padding: 10px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.links{
+    padding: 25px 0px;
+    padding-top: 35px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.links button{
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+.updates{
+    padding-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+/*                              ******Model CSS*****                         */
+
+/* Entity or Model Web-Page */
+/* Main Container for Model Web Page */
+.model-container {
+    font-size: 19px;
+    margin: 1% 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 5px 35px;
+}
+.model-container{
+    margin: 1% 7%;
+    background: linear-gradient(150deg,#e3dbf6,#a99bf9);
+    border-radius:15px;
+}
+/* Primary, Secondary & Tertiary Entity Div */
+.primary,.secondary,.tertiary{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    perspective: 1000px;
+    padding: 15px 0;
+}
+
+/* Card */
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* Card Front */
+.card img{
+    width: 55%;
+    height: 45%;
+    margin: auto;
+    padding: 10px;
+}
+.card-front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-front span{
+    font-size: 32px;
+    font-weight:900;
+    margin: auto;
+}
+.card-front,.card-back{
+    width: 100%;
+    height:100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+/* Card Back */
+.card-back{
+    background: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+}
+.card-back h3{
+    padding-top: 5px;
+    padding-left: 3px;
+}
+.variables{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content:space-between;
+    padding: 0 5px;
+}
+.variables span{
+    font-weight:300;
+    font-size: 16px;
+    padding: 3px;
+}
+.content .left{
+    float: left;
+    padding-left: 15px;
+    font-size: 18px;
+}
+.content .right{
+    float: right;
+    font-size: 17px;
+    padding-right: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Card Background */
+.primary .card-back{
+    background: linear-gradient(125deg,#ffa299,#ff6f61);
+}
+.secondary .card-back{
+    background: linear-gradient(135deg,#ADFF2F,#32CD32);
+}
+.tertiary .card-back{
+    background: linear-gradient(135deg,#ffc966,#e69500);
+}
+
+/* Card Front Background */
+.primary .card-front,.tertiary .card-front,.secondary .card-front{
+    background-color: #e6e6e6;
+}
+
+
+/* Card Hover */
+.primary:hover #user-card{
+    transform: rotateY(180deg);
+}
+.primary:hover #seller-card{
+    transform: rotateY(180deg);
+}
+.primary:hover #product-card{
+    transform: rotateY(180deg);
+}
+.secondary:hover #cart-card{
+    transform: rotateY(180deg);
+}
+.secondary:hover #transaction-card{
+    transform: rotateY(180deg);
+}
+.tertiary:hover #item-card{
+    transform: rotateY(180deg);
+}
+.tertiary:hover #order-card{
+    transform: rotateY(180deg);
+}
+
+
+/* Height & Width for Cards */
+.primary .card,.tertiary .card{
+    height: 340px;
+    width: 275px;
+}
+.secondary .card{
+    width: 275px;
+    height: 260px;
+}
+.secondary img{
+    width: 55%;
+    height: 45%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+}
+/* Card Back Title section */
+.card-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-title img{
+    width: 32px;
+    height: 32px;
+    margin: auto 2px;
+}
+.tertiary{
+    padding-bottom: 30px;
+}
