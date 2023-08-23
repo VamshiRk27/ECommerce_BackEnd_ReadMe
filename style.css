@@ -180,26 +180,9 @@ img{
 
 
 /* Card Hover */
-.primary:hover #user-card{
+#user-card:hover, #seller-card:hover, #product-card:hover, #cart-card:hover, #transaction-card:hover, #item-card:hover, #order-card:hover{
     transform: rotateY(180deg);
-}
-.primary:hover #seller-card{
-    transform: rotateY(180deg);
-}
-.primary:hover #product-card{
-    transform: rotateY(180deg);
-}
-.secondary:hover #cart-card{
-    transform: rotateY(180deg);
-}
-.secondary:hover #transaction-card{
-    transform: rotateY(180deg);
-}
-.tertiary:hover #item-card{
-    transform: rotateY(180deg);
-}
-.tertiary:hover #order-card{
-    transform: rotateY(180deg);
+    cursor:pointer;
 }
 
 
